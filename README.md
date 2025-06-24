@@ -4,6 +4,7 @@
 ### Threads
 
 #### Exercise 1: Thread
+[ThreadExercise.kt](src/main/kotlin/com/motycka/edu/threads/ThreadExercise.kt)
 
 Write a simple program simulating a coffee shop:
 
@@ -14,6 +15,7 @@ Write a simple program simulating a coffee shop:
  5. Make sure to handle possible exceptions.
 
 #### Exercise 2: Atomic Operations
+[AtomicExercise.kt](src/main/kotlin/com/motycka/edu/threads/AtomicExercise.kt)
 
 Enhance your code to process multiple orders in parallel by multiple baristas:
 
@@ -23,6 +25,7 @@ Enhance your code to process multiple orders in parallel by multiple baristas:
 4. In your `main` function, create two threads with two barista names to process the orders.
 
 #### Exercise 3: Semaphore
+[SemaphoreExercise.kt](src/main/kotlin/com/motycka/edu/threads/SemaphoreExercise.kt)
 
 Enhance the code so that the coffee shop can process only coffee one order at a time, 
 as there is only one coffee machine. 
@@ -34,6 +37,7 @@ as there is only one coffee machine.
 ### Coroutines
 
 #### Exercise 1: Basic Coroutine
+[CoroutineExercise.kt](src/main/kotlin/com/motycka/edu/coroutines/CoroutineExercise.kt)
 
 Take the result of your exercises and write the same logic using coroutines.
 
@@ -50,7 +54,7 @@ Take the result of your exercises and write the same logic using coroutines.
 In this exercise, you will implement a simulation of a coffee shop using Kotlin coroutines. 
 The goal is to model a simple ordering and processing system where customers place coffee orders, and baristas prepare them in parallel.
 
-There is a MenuItem enum with different coffee types time to prepare. You can use this example:
+There is a [MenuItem.kt](src/main/kotlin/com/motycka/edu/coffeeshop/MenuItem.kt) enum with different coffee types time to prepare. You can use this example:
 
 ```kotlin
 enum class MenuItem(val time: Long) {
@@ -63,9 +67,9 @@ enum class MenuItem(val time: Long) {
 ```
 
 Your task is to implement:
- - `CoffeeShop` representing the coffee shop and processes orders.
- - `OrderGenerator` to generate coffee orders.
- - `main` function that starts the simulation .
+ - [CoffeeShop](src/main/kotlin/com/motycka/edu/coffeeshop/CoffeeShop.kt) representing the coffee shop and processes orders.
+ - [OrderGenerator](src/main/kotlin/com/motycka/edu/coffeeshop/OrderGenerator.kt) to generate coffee orders.
+ - [main](src/main/kotlin/com/motycka/edu/coffeeshop/Main.kt) function that starts the simulation .
 
 The simulation consists of the following key components:
 
